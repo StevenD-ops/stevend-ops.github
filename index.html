@@ -1,147 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Selección Maestros PUCMM</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!----======== CSS ======== -->
-    <link rel="stylesheet" href="css/style.css">
-    <!----===== Boxicons CSS ===== -->
-    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-    <!--<title>Dashboard Sidebar Menu</title>-->
+    <title>Prematrícula Pucmm</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-    <nav class="sidebar close">
-        <header>
-            <div class="image-text">
-                <span class="image">
-                    <!--<img src="logo.png" alt="">-->
-                </span>
+    <header>
+        <a href="#" class="logo">
+            <span>Prematrícula </span>PUCMM</a>
 
-                <div class="text logo-text">
-                    <span class="name">Seleccion</span>
-                    <span class="profession">Maestros Pucmm</span>
-                </div>
-            </div>
+            <input type="checkbox" id="menu-bar">
+            <label for="menu-bar" class="fa fa-bars"></label>
 
-            <i class='bx bx-chevron-right toggle'></i>
-        </header>
+        <nav class="navbar">
+            <a href="#inicio">inicio</a>
+            <a href="#calificar-maestros">Calificar Docente</a>
+        <!--    <a href="#acerca"></a>
+            <a href="#opiniones">opiniones</a>
+            <a href="#precios">precios</a>
+            <a href="#contactos">contactos</a> -->
+        </nav>
 
-        <div class="menu-bar">
-            <div class="menu">
-
-                <li class="search-box">
-                    <i class='bx bx-search icon'></i>
-                    <input type="text" placeholder="Maestro o Materia...">
-                </li>
-
-                <ul class="menu-links">
-                    <li class="nav-link">
-                        <a href="#">
-                            <i class='bx bx-home-alt icon' ></i>
-                            <span class="text nav-text">Maestros</span>
-                        </a>
-                    </li>
-
-                    <li class="nav-link">
-                        <a href="#">
-                            <i class='bx bx-bar-chart-alt-2 icon' ></i>
-                            <span class="text nav-text">Asignaturas</span>
-                        </a>
-                    </li>
-<!--
-                    <li class="nav-link">
-                        <a href="#">
-                            <i class='bx bx-bell icon'></i>
-                            <span class="text nav-text">Notifications</span>
-                        </a>
-                    </li>
-
-                    <li class="nav-link">
-                        <a href="#">
-                            <i class='bx bx-pie-chart-alt icon' ></i>
-                            <span class="text nav-text">Analytics</span>
-                        </a>
-                    </li>
-
-                    <li class="nav-link">
-                        <a href="#">
-                            <i class='bx bx-heart icon' ></i>
-                            <span class="text nav-text">Likes</span>
-                        </a>
-                    <<!i>
-
-              <li class="nav-link">
-                        <a href="#">
-                            <i class='bx bx-wallet icon' ></i>
-                            <span class="text nav-text">Wallets</span>
-                        </a>
-                    </li>-->
-
-                </ul>
-            </div>
-
-            <div class="bottom-content">
-              <!--  <li class="">
-                    <a href="#">
-                        <i class='bx bx-log-out icon' ></i>
-                        <span class="text nav-text">Logout</span>
-                    </a>
-                </li>-->
-
-                <li class="mode">
-                    <div class="sun-moon">
-                        <i class='bx bx-moon icon moon'></i>
-                        <i class='bx bx-sun icon sun'></i>
-                    </div>
-                    <span class="mode-text text">Dark mode</span>
-
-                    <div class="toggle-switch">
-                        <span class="switch"></span>
-                    </div>
-                </li>
-
-            </div>
+    </header>
+    <section class="inicio" id="inicio">
+        <div class="content">
+            <h3>MONSTER ABC <span>auricurales</span></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga assumenda harum inventore ipsum rerum consequatur iste omnis reiciendis, esse soluta nam repudiandae autem, mollitia, quo laudantium rem sapiente nulla quaerat?</p>
+            <a href="#" class="btn">MAS DETALLES</a>
+        </div>
+        <div class="image">
+            <img src="image/" alt="">
         </div>
 
-    </nav>
-<h1>hola</h1>
-    <section class="home">
-        <div class="text">BUSCADOR DE MAESTROS</div>
-        <div class="text"><h1>hola</h1>
 
-        </div>
     </section>
 
-    <script>
-        const body = document.querySelector('body'),
-      sidebar = body.querySelector('nav'),
-      toggle = body.querySelector(".toggle"),
-      searchBtn = body.querySelector(".search-box"),
-      modeSwitch = body.querySelector(".toggle-switch"),
-      modeText = body.querySelector(".mode-text");
-
-
-toggle.addEventListener("click" , () =>{
-    sidebar.classList.toggle("close");
-})
-
-searchBtn.addEventListener("click" , () =>{
-    sidebar.classList.remove("close");
-})
-
-modeSwitch.addEventListener("click" , () =>{
-    body.classList.toggle("dark");
-
-    if(body.classList.contains("dark")){
-        modeText.innerText = "Light mode";
-    }else{
-        modeText.innerText = "Dark mode";
-
-    }
-});
-    </script>
 
 </body>
+
 </html>
